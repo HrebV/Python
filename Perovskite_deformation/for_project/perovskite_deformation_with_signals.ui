@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>my_window</class>
+ <widget class="QMainWindow" name="my_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>931</width>
+    <height>756</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizeIncrement">
+    <size>
+     <width>1</width>
+     <height>4</height>
+    </size>
+   </property>
+   <property name="baseSize">
+    <size>
+     <width>931</width>
+     <height>756</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <layout class="QVBoxLayout" name="Main_layout" stretch="0,5">
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMinimumSize</enum>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="save_structureLayout">
+          <item>
+           <widget class="QCheckBox" name="rhombohedral">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>rhombohedral</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="orthorombic">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>orthorombic</string>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+            <property name="tristate">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Save_structure">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(255, 255, 127);</string>
+            </property>
+            <property name="text">
+             <string>Save structure</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>30</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="R">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+            <property name="text">
+             <string>R</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="get_R">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="B">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <italic>true</italic>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+            <property name="text">
+             <string>B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="get_B">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="sizeIncrement">
+             <size>
+              <width>1</width>
+              <height>10</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>18</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="import_out_button">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 255, 0);
+border-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Import *.out file</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>98</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Check_buttom">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(0, 0, 255);</string>
+          </property>
+          <property name="text">
+           <string>Check</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>25</width>
+            <height>25</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="Left_panel_Layout">
+          <item>
+           <widget class="QTextEdit" name="import_results_textedit">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+            <property name="lineWrapMode">
+             <enum>QTextEdit::WidgetWidth</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_1">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="text">
+             <string>Valence Bonds</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="Bond_valence_Layout">
+            <item>
+             <widget class="QPushButton" name="Export_AA_AB_BB">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Export AA, AB, BB</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Export_AO_BO">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Export AO, BO</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Export_OO">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Export OO</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="text">
+             <string>Angles</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="AngleLayout">
+            <item>
+             <widget class="QPushButton" name="Angle_B_B_B">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Export B-B-B angle</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>58</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Angle_B_O_B">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Export B-O-B angle</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+              <kerning>true</kerning>
+             </font>
+            </property>
+            <property name="text">
+             <string>Calculate</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="ButtomgridLayout">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="ave_AA">
+              <property name="text">
+               <string>&lt;AA&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="ave_AB">
+              <property name="text">
+               <string>&lt;AB&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QPushButton" name="ave_BB">
+              <property name="text">
+               <string>&lt;BB&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QPushButton" name="ave_AA_BB">
+              <property name="text">
+               <string>&lt;AA&gt;/&lt;BB&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="def_AA">
+              <property name="text">
+               <string>d(AA)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="def_AB">
+              <property name="text">
+               <string>d(AB)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QPushButton" name="def_BB">
+              <property name="text">
+               <string>d(BB)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QPushButton" name="maxmin_AB">
+              <property name="text">
+               <string>AB(max/min)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="ave_AO">
+              <property name="text">
+               <string>&lt;AO&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QPushButton" name="ave_BO">
+              <property name="text">
+               <string>&lt;BO&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QPushButton" name="ave_Theta">
+              <property name="text">
+               <string>&lt;Theta&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QPushButton" name="ave_OO">
+              <property name="text">
+               <string>&lt;OO&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="def_AO">
+              <property name="text">
+               <string>d(AO)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QPushButton" name="def_BO">
+              <property name="text">
+               <string>d(BO)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QPushButton" name="tolerance_factor">
+              <property name="text">
+               <string>Tolerance</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QPushButton" name="bandwidth">
+              <property name="text">
+               <string>Bandwidth</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="right_panelLayout">
+          <item>
+           <widget class="QTextEdit" name="variables">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="Edit_variables_Layout">
+            <item>
+             <widget class="QPushButton" name="Edit_variables">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Edit variables</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>138</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Save_variables">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Save variables</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextEdit" name="calculated">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>2</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="Report_buttom_layout">
+            <item>
+             <widget class="QPushButton" name="Edit_results">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Edit</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Save_results">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Save </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="export_to_file">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Export to file</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>Save_results</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>save_results_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>723</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>def_AO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_def_AO_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>def_BB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_def_BB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>683</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Save_variables</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>save_variables_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>916</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Edit_results</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>edit_results_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>545</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>def_BO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_def_BO_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bandwidth</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_bandwidth_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>export_to_file</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>showDialogWrite()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>916</x>
+     <y>741</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maxmin_AB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_maxmin_AB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>683</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Edit_variables</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>edit_variables_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>389</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Check_buttom</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>parser()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>918</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Export_AA_AB_BB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>export_cation_cation_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>import_out_button</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>showDialogRead()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>733</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_BB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_BB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>654</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Angle_B_O_B</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>export_BOB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_Theta</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_Theta_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_AO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_AO_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Angle_B_B_B</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>export_BBB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_AA_BB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_AABB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>654</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_OO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_OO_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_AA</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_AA_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>654</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>def_AA</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_def_AA_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>683</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>def_AB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_def_AB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>683</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_BO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_BO_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>712</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Export_AO_BO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>export_cation_anion_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>309</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Export_OO</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>export_OO_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>547</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ave_AB</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>calculate_ave_AB_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>654</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>291</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Save_structure</sender>
+   <signal>clicked()</signal>
+   <receiver>my_window</receiver>
+   <slot>save_variables_func()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>292</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>465</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>showDialogRead()</slot>
+  <slot>export_cation_cation_func()</slot>
+  <slot>export_cation_anion_func()</slot>
+  <slot>export_OO_func()</slot>
+  <slot>export_BBB_func()</slot>
+  <slot>export_BOB_func()</slot>
+  <slot>calculate_ave_AA_func()</slot>
+  <slot>calculate_ave_AB_func()</slot>
+  <slot>calculate_ave_BB_func()</slot>
+  <slot>calculate_ave_AABB_func()</slot>
+  <slot>calculate_ave_AO_func()</slot>
+  <slot>calculate_ave_BO_func()</slot>
+  <slot>calculate_ave_OO_func()</slot>
+  <slot>calculate_ave_Theta_func()</slot>
+  <slot>calculate_def_AA_func()</slot>
+  <slot>calculate_def_AB_func()</slot>
+  <slot>calculate_def_BB_func()</slot>
+  <slot>calculate_maxmin_AB_func()</slot>
+  <slot>calculate_def_AO_func()</slot>
+  <slot>calculate_def_BO_func()</slot>
+  <slot>calculate_tolerance_func()</slot>
+  <slot>calculate_bandwidth_func()</slot>
+  <slot>edit_variables_func()</slot>
+  <slot>save_variables_func()</slot>
+  <slot>edit_results_func()</slot>
+  <slot>save_results_func()</slot>
+  <slot>showDialogWrite()</slot>
+  <slot>parser()</slot>
+ </slots>
+</ui>

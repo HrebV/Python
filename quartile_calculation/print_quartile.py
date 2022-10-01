@@ -1,0 +1,11 @@
+def print_result(res):
+    print('\n~~~~~~~~~~~~~~~~~~~~~~~START~~~~~~~~~~~~~~~~~~~~~~~~')
+    print('results =', res)
+    print('~~~~~~~~~~~~~~~~~~~~~In detail~~~~~~~~~~~~~~~~~~~~~~')
+    print('Q1 = ', res[0])
+    print('Q2 = ', res[1])
+    print('Q3 = ', res[2])
+    print('IQR = ', res[3])
+    print('left limit', res[4])
+    print('right limit', res[5])
+    print('~~~~~~~~~~~~~~~~~Correction~~~~~~~~~~~~~~~~~~~~~\n')
